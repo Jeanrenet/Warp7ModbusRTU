@@ -6,6 +6,12 @@
 CEepromClick::CEepromClick()
 {
     m_eepromFile = new QFile(EEPROM_READ_WRITE);
+
+    //initialisation
+    quint32 id;
+    getModbusID(id);
+    if (id > 255)
+        setModbusID(1);
 }
 
 CEepromClick::~CEepromClick()
