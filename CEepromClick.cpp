@@ -35,7 +35,7 @@ void CEepromClick::getModbusID(quint32 &value)
 
         QDataStream str(data);
         str >> value;
-        qDebug() << "Read value "<< value;
+        qDebug() << "Read Modbus ID is : "<< value;
         m_eepromFile->close();
     }
 }

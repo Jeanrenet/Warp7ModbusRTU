@@ -23,6 +23,11 @@ CFlameClick::~CFlameClick()
     delete m_flameFile;
 }
 
+bool CFlameClick::getStatus()
+{
+    return m_systemIsOnFire;
+}
+
 void CFlameClick::checkFile()
 {
     if (m_flameFile->open(QIODevice::ReadOnly))

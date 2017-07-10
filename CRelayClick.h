@@ -3,7 +3,7 @@
 
 #include <QFile>
 
-#define RELAY_OUT "/dev/mikrobus/out_RL1"
+#define RELAY_OUT "/dev/mikrobus/out_RL2"
 
 class CRelayClick : public QObject
 {

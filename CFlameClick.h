@@ -16,6 +16,8 @@ public:
 public:
     Q_SIGNAL void flameDetected(bool);
 
+    bool getStatus();
+
 protected slots:
     void checkFile();
 
